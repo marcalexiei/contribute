@@ -2,7 +2,10 @@
 
 Shared guidelines across my repositories.
 
-Refer to [docs folder](./docs)
+They are created using [vitepress](https://vitepress.dev).
 
-- [Commit rules](./docs/commit-rules.md)
-- [PNPM + NVM setup](./docs/pnpm-nvm-setup.md)
+> [!TIP]
+> To view them you can
+>
+> - go to the [docs folder](./docs)
+> - visit the github pages associated with this repo
