@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "keywords": [],
   "author": "Marco Pasqualetti @marcalexiei",
   "license": "MIT",
@@ -14,13 +15,17 @@
     "lint": "markdownlint .",
     "lint:fix": "pnpm lint --fix",
     "spellcheck": "cspell . --show-context",
-    "check-all": "pnpm run \"/^(format|lint|spellcheck)$/\""
+    "check-all": "pnpm run \"/^(format|lint|spellcheck)$/\"",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "cspell": "8.15.3",
     "husky": "9.1.6",
     "markdownlint": "0.35.0",
     "markdownlint-cli": "0.42.0",
-    "prettier": "3.3.3"
+    "prettier": "3.3.3",
+    "vitepress": "1.4.1"
   }
 }
