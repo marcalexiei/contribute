@@ -18,15 +18,29 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    name: Deploy pre check
+    runs-on: ubuntu-latest
+    outputs:
+      result: ${{ steps.gen_output.outputs.result }}
+    steps:
+      - id: gen_output
+        if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+        run: |
+          echo "result=true" >> "$GITHUB_OUTPUT"
+
   build:
     name: Build
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    needs: [check]
+    if: ${{ needs.check.outputs.result }}
     runs-on: ubuntu-latest
     steps:
+      - run: echo
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+          fetch-depth: 0
 
       - name: Install Dependencies
         uses: ./.github/actions/install-dependencies
@@ -44,8 +58,8 @@ jobs:
 
   deploy:
     name: Deploy
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
-    needs: build
+    needs: [check, build]
+    if: ${{ needs.check.outputs.result }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -56,8 +70,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  on-failure:
+  failure:
+    name: "Failure"
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    needs: [check]
+    if: ${{ !needs.check.outputs.result }}
     steps:
       - run: echo 'CI failed. Deploy won't be executed'
