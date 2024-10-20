@@ -35,8 +35,6 @@ jobs:
     if: ${{ needs.check.outputs.result }}
     runs-on: ubuntu-latest
     steps:
-      - run: echo
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
