@@ -11,3 +11,7 @@ feat: support new API syntax
 ```text
 fix(import-rule): handle duplicates import
 ```
+
+```text
+chore(release): 1.0.0
+```
