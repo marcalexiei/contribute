@@ -1,11 +1,25 @@
 import { defineConfig } from "vitepress";
 
+const base = "/contribute";
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/contribute/",
+  base,
 
   title: "MarcAlexiei's contributing",
   description: "Instructions for CONTRIBUTING in my few repos",
+
+  head: [
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/png",
+        href: `${base}/favicon.png`,
+      },
+    ],
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [{ text: "Home", link: "/" }],
