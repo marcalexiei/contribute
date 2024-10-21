@@ -3,13 +3,29 @@
 This repository uses:
 
 - `node` via [`nvm`](https://github.com/nvm-sh)
-- `pnpm` as package manager via `corepack`.
+- `pnpm` as package manager via [`corepack`](https://nodejs.org/api/corepack.html).
 
-```shell
-# install nvm
-nvm use
-```
+::: tip
+If you do not have any of this tool installed follow
+the instructions on their relative site.
+:::
 
-```shell
-corepack use pnpm
-```
+---
+
+1. Use project specific Node version (version is located in `.nvmrc` file)
+
+   ```shell
+   nvm use
+   ```
+
+2. Enable `corepack`
+
+   ```shell
+   corepack enable
+   ```
+
+3. Use pnpm via corepack
+
+   ```shell
+   corepack use pnpm
+   ```
