@@ -11,5 +11,5 @@ hero:
       link: /commit-rules
     - theme: alt
       text: PNPM and NVM Setup
-      link: /pnpm-nvm-setup
+      link: /setup-pnpm-nvm
 ---
