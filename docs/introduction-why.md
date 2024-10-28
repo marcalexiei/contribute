@@ -15,7 +15,9 @@ This is useful to avoid copy paste the same instructions every time.
 Only on `main` branch, after a completed run of `CI` workflow,
 the `CD` workflow is triggered:
 
-> [!NOTE] > `workflow_dispatch` trigger has been added for maintenance purpose.
+<!-- prettier-ignore -->
+> [!NOTE]
+> `workflow_dispatch` trigger has been added for maintenance purpose.
 
 <<< @/../.github/workflows/CD.yml#triggers
 
@@ -27,6 +29,8 @@ you have to check the `conclusion` property of `github.event.workflow_run`.
 
 <<< @/../.github/workflows/CD.yml#condition
 
-> [!NOTE] > `github.event_name` is checked to allow manual deploy
+<!-- prettier-ignore -->
+> [!NOTE]
+> `github.event_name` is checked to allow manual deploy
 
 :::
