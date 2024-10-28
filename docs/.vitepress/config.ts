@@ -33,6 +33,7 @@ export default defineConfig({
         text: "Environment setup",
         items: [{ text: "PNPM and NVM Setup", link: "/setup-pnpm-nvm" }],
       },
+      { text: "Attributions", link: "/attributions" },
     ],
 
     socialLinks: [

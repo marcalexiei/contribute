@@ -5,6 +5,9 @@ layout: home
 hero:
   name: "MarcAlexiei's contributing"
   tagline: "Instructions for CONTRIBUTING in my few repos"
+  image:
+    src: /memo.svg
+    alt: ""
   actions:
     - theme: brand
       text: Commit rules
