@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@marcalexiei/prettier-config':
+        specifier: 1.0.4
+        version: 1.0.4(prettier@3.3.3)
       cspell:
         specifier: 8.15.3
         version: 8.15.3
@@ -480,6 +483,12 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
+
+  '@marcalexiei/prettier-config@1.0.4':
+    resolution: {integrity: sha512-CMSAADRuQMqCJ4ShCpPUQVqI1M0DRk5zUgqLHfMEDHM+YiZyYcT2Xhvmo43BH3u74+Y/5XZBFbbH4MV+rmj1Ag==}
+    engines: {node: '>= 20'}
+    peerDependencies:
+      prettier: ^2.8.0 || ^3.0.0
 
   '@rollup/rollup-android-arm-eabi@4.24.0':
     resolution: {integrity: sha512-Q6HJd7Y6xdB48x8ZNVDOqsbh2uByBhgK8PiQgPhwkIw/HC/YX5Ghq2mQY5sRMZWHb3VsFkWooUVOZHKr7DmDIA==}
@@ -1783,6 +1792,10 @@ snapshots:
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
+
+  '@marcalexiei/prettier-config@1.0.4(prettier@3.3.3)':
+    dependencies:
+      prettier: 3.3.3
 
   '@rollup/rollup-android-arm-eabi@4.24.0':
     optional: true

@@ -4,10 +4,10 @@ layout: home
 
 hero:
   name: "MarcAlexiei's contributing"
-  tagline: "Instructions for CONTRIBUTING in my few repos"
+  tagline: 'Instructions for CONTRIBUTING in my few repos'
   image:
     src: /memo.svg
-    alt: ""
+    alt: ''
   actions:
     - theme: brand
       text: Why?

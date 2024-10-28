@@ -1,20 +1,20 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress';
 
-const base = "/contribute";
+const base = '/contribute';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base,
 
   title: "MarcAlexiei's contributing",
-  description: "Instructions for CONTRIBUTING in my few repos",
+  description: 'Instructions for CONTRIBUTING in my few repos',
 
   head: [
     [
-      "link",
+      'link',
       {
-        rel: "icon",
-        type: "image/png",
+        rel: 'icon',
+        type: 'image/png',
         href: `${base}/favicon.png`,
       },
     ],
@@ -22,26 +22,26 @@ export default defineConfig({
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "Home", link: "/" }],
+    nav: [{ text: 'Home', link: '/' }],
 
     sidebar: [
       {
-        text: "Introduction",
-        items: [{ text: "Why?", link: "/introduction-why" }],
+        text: 'Introduction',
+        items: [{ text: 'Why?', link: '/introduction-why' }],
       },
       {
-        text: "VCS",
-        items: [{ text: "Commit rules", link: "/commit-rules" }],
+        text: 'VCS',
+        items: [{ text: 'Commit rules', link: '/commit-rules' }],
       },
       {
-        text: "Environment setup",
-        items: [{ text: "PNPM and NVM Setup", link: "/setup-pnpm-nvm" }],
+        text: 'Environment setup',
+        items: [{ text: 'PNPM and NVM Setup', link: '/setup-pnpm-nvm' }],
       },
-      { text: "Attributions", link: "/attributions" },
+      { text: 'Attributions', link: '/attributions' },
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/marcalexiei/contribute" },
+      { icon: 'github', link: 'https://github.com/marcalexiei/contribute' },
     ],
   },
 });
