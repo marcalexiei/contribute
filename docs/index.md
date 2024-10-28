@@ -10,9 +10,18 @@ hero:
     alt: ""
   actions:
     - theme: brand
-      text: Commit rules
-      link: /commit-rules
-    - theme: alt
-      text: PNPM and NVM Setup
-      link: /setup-pnpm-nvm
+      text: Why?
+      link: /introduction-why
+
+features:
+  - icon: 👨‍💻
+    title: Commit rules
+    # details: NA
+    link: /commit-rules
+    linkText: Learn more
+  - icon: ⚙️
+    title: PNPM and NVM Setup
+    # details: NA
+    link: /setup-pnpm-nvm
+    linkText: Learn more
 ---
