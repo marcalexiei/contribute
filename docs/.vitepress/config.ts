@@ -26,6 +26,10 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: "Introduction",
+        items: [{ text: "Why?", link: "/introduction-why" }],
+      },
+      {
         text: "VCS",
         items: [{ text: "Commit rules", link: "/commit-rules" }],
       },

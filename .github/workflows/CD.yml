@@ -1,5 +1,6 @@
 name: CD (Deploy VitePress site to Pages)
 
+# region triggers
 on:
   workflow_run:
     workflows: [CI]
@@ -7,6 +8,7 @@ on:
     branches: [main]
 
   workflow_dispatch:
+# endregion triggers
 
 permissions:
   contents: read
@@ -25,7 +27,9 @@ jobs:
       result: ${{ steps.gen_output.outputs.result }}
     steps:
       - id: gen_output
+        # region condition
         if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+        # endregion condition
         run: |
           echo "result=true" >> "$GITHUB_OUTPUT"
 
