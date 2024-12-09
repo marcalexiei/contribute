@@ -1,0 +1,31 @@
+version: 2
+
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    groups:
+      dev-code-check:
+        applies-to: 'version-updates'
+        dependency-type: 'development'
+        patterns:
+          - '@marcalexiei/prettier-config'
+          - 'cspell'
+          - 'husky'
+          - 'markdownlint'
+          - 'markdownlint-cli'
+          - 'prettier'
+
+      build:
+        applies-to: 'version-updates'
+        dependency-type: 'development'
+        patterns:
+          - 'vitepress'
