@@ -23,9 +23,9 @@
   },
   "devDependencies": {
     "@marcalexiei/prettier-config": "1.0.4",
-    "cspell": "8.16.1",
+    "cspell": "8.17.1",
     "husky": "9.1.7",
-    "markdownlint": "0.37.0",
+    "markdownlint": "0.37.3",
     "markdownlint-cli": "0.43.0",
     "prettier": "3.4.2",
     "vitepress": "1.5.0"
