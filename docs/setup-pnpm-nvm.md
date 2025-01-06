@@ -27,5 +27,5 @@ the instructions on their relative site.
 3. Use pnpm via corepack
 
    ```shell
-   corepack use pnpm
+   corepack install
    ```
