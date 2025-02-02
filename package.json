@@ -22,11 +22,11 @@
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
-    "@marcalexiei/prettier-config": "1.0.4",
-    "cspell": "8.17.1",
+    "@marcalexiei/prettier-config": "1.1.1",
+    "cspell": "8.17.3",
     "husky": "9.1.7",
-    "markdownlint": "0.37.3",
-    "markdownlint-cli": "0.43.0",
+    "markdownlint": "0.37.4",
+    "markdownlint-cli": "0.44.0",
     "prettier": "3.4.2",
     "vitepress": "1.6.3"
   }
