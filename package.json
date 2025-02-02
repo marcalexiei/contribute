@@ -28,6 +28,6 @@
     "markdownlint": "0.37.3",
     "markdownlint-cli": "0.43.0",
     "prettier": "3.4.2",
-    "vitepress": "1.5.0"
+    "vitepress": "1.6.3"
   }
 }
