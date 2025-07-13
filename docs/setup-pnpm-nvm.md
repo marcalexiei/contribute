@@ -24,7 +24,7 @@ the instructions on their relative site.
    corepack enable
    ```
 
-3. Use pnpm via corepack
+3. Use `pnpm` via `corepack`
 
    ```shell
    corepack install

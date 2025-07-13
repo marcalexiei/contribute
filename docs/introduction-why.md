@@ -2,18 +2,18 @@
 
 ## Purpose
 
-This site is used to host common setup instructions between my repositories.
+This site maintains the shared setup guide used by all my repositories.
 
 ## This seems useless... why have you done it?
 
-::: tip
-This is useful to avoid copy paste the same instructions every time.
-:::
+> [!TIP]
+> Rather than copying and pasting the same steps into every repo,
+> this central snippet keeps your setup instructions dry and consistent.
 
-::: details Tryout a more “solid” deploy approach using GitHub Actions {open}
+::: details Try a robust deploy with GitHub Actions {open}
 
-Only on `main` branch, after a completed run of `CI` workflow,
-the `CD` workflow is triggered:
+Only the `main` branch triggers the `CD` workflow—after the `CI` workflow
+completes successfully.
 
 <!-- prettier-ignore -->
 > [!NOTE]
@@ -21,16 +21,16 @@ the `CD` workflow is triggered:
 
 <<< @/../.github/workflows/CD.yml#triggers
 
-However there is a caveat: the `CD` workflow is called after `CI` is completed,
-whenever the result is.
+However, be aware:
+the `CD` workflow will fire whenever `CI` finishes—regardless of success or failure.
 
-In order to execute the `CD` workflow `deploy` and `deploy` jobs
-you have to check the `conclusion` property of `github.event.workflow_run`.
+To ensure deployments only run on successful `CI`,
+you have to check the `conclusion` property of `github.event.workflow_run`:
 
 <<< @/../.github/workflows/CD.yml#condition
 
 <!-- prettier-ignore -->
 > [!NOTE]
-> `github.event_name` is checked to allow manual deploy
+> The `github.event_name` check is required to allow manual dispatches as well.
 
 :::
