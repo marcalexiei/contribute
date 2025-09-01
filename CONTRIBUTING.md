@@ -1,3 +1,3 @@
 # Contributing
 
-Refer to [docs/pnpm-nvm-setup.md](./docs/pnpm-nvm-setup.md)
+Refer to [docs/setup-pnpm-nvm.md](./docs/setup-pnpm-nvm.md)
