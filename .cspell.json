@@ -1,6 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
-  "words": ["corepack", "Pasqualetti", "marcalexiei", "svgrepo"],
+  "words": [
+    "adduser",
+    "corepack",
+    "ELIFECYCLE",
+    "ENEEDAUTH",
+    "marcalexiei",
+    "Pasqualetti",
+    "svgrepo"
+  ],
   "useGitignore": true,
   "ignorePaths": ["**/pnpm-*.yaml"]
 }

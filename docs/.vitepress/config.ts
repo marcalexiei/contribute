@@ -37,6 +37,10 @@ export default defineConfig({
         text: 'Environment setup',
         items: [{ text: 'PNPM and NVM Setup', link: '/setup-pnpm-nvm' }],
       },
+      {
+        text: 'Release',
+        items: [{ text: 'Changesets', link: '/release-changesets' }],
+      },
       { text: 'Attributions', link: '/attributions' },
     ],
 

@@ -24,4 +24,9 @@ features:
     # details: NA
     link: /setup-pnpm-nvm
     linkText: Learn more
+  - icon: 🚀
+    title: Release
+    # details: NA
+    link: /release-changesets
+    linkText: Learn more
 ---
