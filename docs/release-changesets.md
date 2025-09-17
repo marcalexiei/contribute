@@ -5,6 +5,10 @@
 This workflow automates the release process for the project.
 It runs automatically when the CI workflow completes on the `main` branch.
 
+> [!NOTE]
+> When changeset files are present, a PR titled chore: release will be opened.
+> Merging it will trigger the release process, automatically publishing a new version.
+
 ### Authentication
 
 - Uses a GitHub App for authentication
