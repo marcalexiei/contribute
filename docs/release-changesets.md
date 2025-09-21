@@ -46,10 +46,37 @@ preventing release execution in case of CI failures.
 
 ## Trusted publishing
 
-The package has Trusted publishing enabled so no NPM_TOKEN is stored
+The package has Trusted publishing enabled so no `NPM_TOKEN` is stored
 among repository secrets.
 
+> [!CAUTION]
+> Ensure to have a `npm` version `>= 11.5.0` \
+> Refs:
+>
+> - <https://github.com/npm/cli/releases/tag/v11.5.0>
+> - <https://github.com/npm/cli/pull/8336>
+
+---
+
 > [!WARNING]
+> To avoid 404 errors while publishing,
+> be sure to set an explicit registry url:
+>
+> ```yml
+> - name: Setup Node.js (via .nvmrc)
+>   uses: actions/setup-node@v4
+>   with:
+>     node-version-file: '.nvmrc'
+>     cache: 'pnpm'
+>     registry-url: 'https://registry.npmjs.org'
+> ```
+
+---
+
+> [!WARNING]
+>
+> **THIS NEEDS FURTHER INVESTIGATION**
+>
 > During setup be sure to create a `.nvmrc` file in the repo,
 > this will avoid unauthorized errors when publishing to the registry.
 >
