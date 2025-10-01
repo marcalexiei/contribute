@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@marcalexiei/prettier-config':
-        specifier: 1.1.1
-        version: 1.1.1(prettier@3.6.2)
+        specifier: 1.1.4
+        version: 1.1.4(prettier@3.6.2)
       cspell:
         specifier: 9.2.1
         version: 9.2.1
@@ -526,8 +526,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
 
-  '@marcalexiei/prettier-config@1.1.1':
-    resolution: {integrity: sha512-ET4v09kfT1LzgHB0b4LByfUM76H6BgOaxdKd6GGj7qRBJ3g/2Mke+Uu2+9Qy8f7UpruxCjeLkJ5hDsZoi1dH5Q==}
+  '@marcalexiei/prettier-config@1.1.4':
+    resolution: {integrity: sha512-aRTVCdhiUeqLvye6sUaTCzyGWcs3friq2LE6yi2qFsbBaHzntTsK4JUkKWdV+pkbcRh6BvdythRzoQAr18XxsA==}
     engines: {node: '>= 20'}
     peerDependencies:
       prettier: ^2.8.0 || ^3.0.0
@@ -1974,7 +1974,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
-  '@marcalexiei/prettier-config@1.1.1(prettier@3.6.2)':
+  '@marcalexiei/prettier-config@1.1.4(prettier@3.6.2)':
     dependencies:
       prettier: 3.6.2
 
