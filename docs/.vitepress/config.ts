@@ -39,7 +39,13 @@ export default defineConfig({
       },
       {
         text: 'Release',
-        items: [{ text: 'Changesets', link: '/release-changesets' }],
+        items: [
+          { text: 'Changesets', link: '/release-changesets' },
+          {
+            text: 'NPM Trusted publishing',
+            link: '/release-npm-trusted-publishing',
+          },
+        ],
       },
       { text: 'Attributions', link: '/attributions' },
     ],
