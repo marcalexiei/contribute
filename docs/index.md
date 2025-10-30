@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "MarcAlexiei's contributing"
-  tagline: 'Instructions for CONTRIBUTING in my few repos'
+  tagline: 'How to contribute to my repositories'
   image:
     src: /memo.svg
     alt: ''

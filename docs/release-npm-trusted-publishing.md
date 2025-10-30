@@ -18,7 +18,7 @@ As a result, an NPM_TOKEN is not required or stored in the repository secrets.
 >
 > ```yml
 > - name: Setup Node.js (via .nvmrc)
->   uses: actions/setup-node@v4
+>   uses: actions/setup-node@v6
 >   with:
 >     node-version-file: '.nvmrc'
 >     cache: 'pnpm'
