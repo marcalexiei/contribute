@@ -10,14 +10,12 @@ on:
 
 permissions: {}
 
-env:
-  CI: true
-
 jobs:
   check:
     name: Run all checks
     runs-on: ubuntu-latest
     timeout-minutes: 15
+
     permissions:
       contents: read
 

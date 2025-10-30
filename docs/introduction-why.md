@@ -19,7 +19,7 @@ completes successfully.
 > [!NOTE]
 > `workflow_dispatch` trigger has been added for maintenance purpose.
 
-<<< @/../.github/workflows/CD.yml#triggers
+<<< @/../.github/workflows/cd.yml#triggers
 
 However, be aware:
 the `CD` workflow will fire whenever `CI` finishes—regardless of success or failure.
@@ -27,7 +27,7 @@ the `CD` workflow will fire whenever `CI` finishes—regardless of success or fa
 To ensure deployments only run on successful `CI`,
 you have to check the `conclusion` property of `github.event.workflow_run`:
 
-<<< @/../.github/workflows/CD.yml#condition
+<<< @/../.github/workflows/cd.yml#condition
 
 <!-- prettier-ignore -->
 > [!NOTE]
