@@ -2,11 +2,11 @@
 
 ## Release Workflow
 
-This workflow automates the release process for the project.
+This repository has an automated release workflow.\
 It runs automatically when the CI workflow completes on the `main` branch.
 
 > [!NOTE]
-> When changeset files are present, a PR titled chore: release will be opened.
+> When changeset files are present, a PR titled `chore: release` will be opened.\
 > Merging it will trigger the release process, automatically publishing a new version.
 
 ### Authentication
