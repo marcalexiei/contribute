@@ -7,13 +7,13 @@
   "keywords": [],
   "author": "Marco Pasqualetti @marcalexiei",
   "license": "MIT",
-  "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b",
+  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017",
   "prettier": "@marcalexiei/prettier-config",
   "scripts": {
     "prepare": "husky",
     "format": "prettier . --check",
     "format:fix": "prettier . --write",
-    "lint": "markdownlint . --ignore node_modules",
+    "lint": "markdownlint . --config .markdownlint.json --ignore node_modules",
     "lint:fix": "pnpm lint --fix",
     "spellcheck": "cspell . --show-context",
     "check-all": "pnpm run \"/^(format|lint|spellcheck)$/\"",
@@ -23,11 +23,11 @@
   },
   "devDependencies": {
     "@marcalexiei/prettier-config": "1.1.4",
-    "cspell": "9.4.0",
+    "cspell": "9.7.0",
     "husky": "9.1.7",
-    "markdownlint": "0.39.0",
-    "markdownlint-cli": "0.46.0",
-    "prettier": "3.7.3",
+    "markdownlint": "0.40.0",
+    "markdownlint-cli": "0.47.0",
+    "prettier": "3.8.1",
     "vitepress": "1.6.4"
   }
 }
