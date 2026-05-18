@@ -12,12 +12,8 @@ This site maintains the shared setup guide used by all my repositories.
 
 ::: details Try a robust deploy with GitHub Actions {open}
 
-Only the `main` branch triggers the `CD` workflow—after the `CI` workflow
+Only the `main` branch triggers the `CD` workflow, after the `CI` workflow
 completes successfully.
-
-<!-- prettier-ignore -->
-> [!NOTE]
-> `workflow_dispatch` trigger has been added for maintenance purpose.
 
 <<< @/../.github/workflows/cd.yml#triggers
 
