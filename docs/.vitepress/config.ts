@@ -50,8 +50,6 @@ export default defineConfig({
       { text: 'Attributions', link: '/attributions' },
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/marcalexiei/contribute' },
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/marcalexiei/contribute' }],
   },
 });
