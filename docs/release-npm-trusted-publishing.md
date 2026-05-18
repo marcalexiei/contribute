@@ -29,7 +29,7 @@ As a result, an `NPM_TOKEN` is not required and is not stored in the repository 
 
 > [!CAUTION]
 > Before publishing, ensure that Trusted Publishing is enabled in npm package settings.\
-> This is a critical security feature that must be configured for successful publishing.\
+> This is a critical security feature that must be configured for successful publishing.
 >
 > Yes, I forget to do that 😅.
 
