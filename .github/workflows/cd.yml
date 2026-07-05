@@ -58,7 +58,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Dependencies
-        uses: marcalexiei/github-actions/.github/actions/setup-node-and-pnpm@6735bb9dd019900ebc16ce34e13c118b3917d1f7 # v1.2.0
+        uses: marcalexiei/github-actions/.github/actions/setup-node-and-pnpm@35654007fc916287603cd114516a3d1295f62689 # v2.0.0
 
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
