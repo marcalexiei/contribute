@@ -107,4 +107,4 @@ jobs:
       - check
 
     steps:
-      - run: echo 'CI failed. Deploy won't be executed'
+      - run: echo 'CI failed. Deploy will not run.'
