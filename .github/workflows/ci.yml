@@ -30,7 +30,7 @@ jobs:
           persist-credentials: false
 
       - name: Install Dependencies
-        uses: marcalexiei/github-actions/.github/actions/setup-node-and-pnpm@6735bb9dd019900ebc16ce34e13c118b3917d1f7 # v1.2.0
+        uses: marcalexiei/github-actions/.github/actions/setup-node-and-pnpm@d5a5561c7caea4f18642f3967aad095af51c3905 # v2.1.0
 
       - name: Build
         run: pnpm run docs:build
