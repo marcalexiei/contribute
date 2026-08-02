@@ -1,0 +1,4 @@
+pre-commit:
+  jobs:
+    - name: check-all
+      run: pnpm check-all
