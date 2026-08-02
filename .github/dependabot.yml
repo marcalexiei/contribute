@@ -27,7 +27,7 @@ updates:
         patterns:
           - '@marcalexiei/prettier-config'
           - 'cspell'
-          - 'husky'
+          - 'lefthook'
           - 'markdownlint'
           - 'markdownlint-cli'
           - 'prettier'
