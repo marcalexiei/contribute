@@ -18,9 +18,10 @@ the instructions on their relative site.
    nvm use
    ```
 
-2. Enable `corepack`
+2. Install and enable `corepack` (no longer bundled with Node.js from v25)
 
    ```shell
+   npm install -g corepack
    corepack enable
    ```
 
