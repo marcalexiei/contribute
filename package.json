@@ -23,11 +23,11 @@
   },
   "devDependencies": {
     "@marcalexiei/prettier-config": "2.0.0",
-    "cspell": "10.0.1",
-    "lefthook": "2.1.10",
-    "markdownlint": "0.41.1",
-    "markdownlint-cli": "0.49.1",
-    "prettier": "3.9.6",
+    "cspell": "10.4.0",
+    "lefthook": "2.2.2",
+    "markdownlint": "0.42.0",
+    "markdownlint-cli": "0.50.0",
+    "prettier": "3.9.10",
     "vitepress": "2.0.0-alpha.18"
   }
 }
