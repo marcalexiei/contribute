@@ -1,4 +1,4 @@
 pre-commit:
   jobs:
-    - name: check-all
-      run: pnpm check-all
+    - name: validate
+      run: pnpm validate
